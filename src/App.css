@@ -1,0 +1,178 @@
+
+.resident {
+  width: 220px;
+  height: 500px;
+   justify-content: center;
+   background-color:rgb(112, 4, 4) ;
+   color: white;
+   border-radius: 1em;
+   overflow: hidden;
+   transition: trasform 100ms ease;
+   position: relative;
+   margin: 10px; 
+   
+}
+.resident_card{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  justify-content: center;
+}
+
+.resident:hover{
+  transform: scale(1.03);
+}
+.resident_header{
+  position: relative;
+}
+.resident_status {
+  position: absolute;
+  top: 2.5em;
+  background-color: rgb(125, 5, 5) ;
+  padding: 0.3em 0.7em;
+  border-radius: 0 0.5em 0.5em 0;
+  display: flex;
+  gap: 0.7em;
+  align-items: center;
+}
+.resident_status_circle{
+  display: block;
+  width: 14px;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 50%;
+}
+.Alive {
+  background-color: green;
+}
+.Dead {
+  background-color: red;
+}
+.resident_body {
+  padding: 1.5em 1em 2.5em;
+}
+.resident_name {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  color: rgb(171, 171, 171);
+}
+.resident_separator {
+  margin-bottom: 0.5em;
+  border-color: #b33212 ;
+}
+.resident_list {
+  display: grid;
+  gap: 0.7em;
+}
+.resident_items {
+  display: flex;
+  flex-direction: column;
+}
+.resident_label {
+  font-size: 0.8em;
+  padding-left: 1em;
+  color: #cacaca;
+}
+.resident_value {
+  font-weight: 500;
+}
+.button {
+  width: 10%;
+  height: 4vh;
+  background-color: rgb(2, 219, 2);
+  color: white;
+  transition: 1ms;
+  transition: trasform 100ms ease;
+  border: none;
+  margin-bottom: 10px;
+  border: 2px solid black;
+
+}
+.button:hover{
+  transform: scale(1.05);
+}
+.input_button{
+  width: 30vh;
+  height: 4vh;
+  border: 1px solid;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.location_article{
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 2em;
+  background-color:rgb(134, 1, 1) ;
+  color: white;
+  justify-content: center; 
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.resident_article{
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.resident_img_rick{
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 20px;
+}
+.resident_form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  background-color: #959595;
+}
+.resident_tarje{
+  display: grid;
+  background-color: wheat ;
+  width: 100%;
+  height: 100%;
+  max-width: 320px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3em;
+}
+.has_error{
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  margin-top: 10vh;
+  display: flex;
+}
+@media (max-width: 810px){
+  .resident_card{
+    grid-template-columns: auto auto auto;
+  }
+  .resident{
+    width: 160px;
+    height: 400px;
+  }
+}
+@media(max-width: 580px){
+  .resident_card{
+    grid-template-columns: auto auto;
+  }
+}
+@media(max-width: 1000px){
+  .resident{
+    width: 120px;
+  }
+}
+
+
+  
